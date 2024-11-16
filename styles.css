@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #0044cc;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#field {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background: green;
+  border: 2px solid white;
+  margin: 10px;
+}
+
+#goal {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 100px;
+  height: 10px;
+  background: white;
+}
+
+#goalkeeper, #player, #ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+#goalkeeper {
+  top: 50px;
+  left: 135px;
+  background: yellow;
+}
+
+#player {
+  bottom: 50px;
+  left: 135px;
+  width: 100%;
+  height: 100%;
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  position: absolute;
+}
+
+#ball {
+  bottom: 90px;
+  left: 150px;
+  background: white;
+}
+
+#start-btn {
+  background-color: #0044cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#start-btn:hover {
+  background-color: #0033a1;
+}
+
+#controls {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+#teams {
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  border: 2px solid #0044cc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+#msg {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #e74c3c;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+button:active {
+  background-color: #1abc9c;
+}
+
+#reset-btn {
+  background-color: #e74c3c;
+}
+
+#reset-btn:hover {
+  background-color: #c0392b;
+}
+
+#change-btn {
+  background-color: #3498db;
+}
+
+#change-btn:hover {
+  background-color: #2980b9;
+}
+
+#score-board span {
+  margin: 0 10px;
+}
+
+#menu {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#game {
+  display: none;
+  padding: 20px;
+}
+
+#msg-gol, #msg-defesa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: #e74c3c;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 10;
+  opacity: 0;
+  animation: showGol 2s forwards;
+}
+
+@keyframes showGol {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+#field {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #2e8b57;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#goal {
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+  background-color: #f1c40f;
+  border-top: 2px solid #ccc;
+}
+
+#goalkeeper {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f39c12;
+  border-radius: 5px;
+}
+
+#player {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}

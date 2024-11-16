@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Futebol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Escolha sua Seleção</h1>
+    <select id="teams">
+        <option value="brazil">Brasil</option>
+        <option value="germany">Alemanha</option>
+        <option value="italy">Itália</option>
+        <option value="argentina">Argentina</option>
+        <option value="uruguay">Uruguai</option>
+        <option value="france">França</option>
+        <option value="spain">Espanha</option>
+        <option value="england">Inglaterra</option>
+      </select>
+    <button id="start-btn">Iniciar Jogo</button>
+    <div id="controls">
+        Mova o jogador com as setas do teclado e chute no espaço
+    </div>
+  </div>
+
+  <div id="game" class="hidden">
+    <div id="field">
+      <div id="goal"></div>
+      <div id="goalkeeper"></div>
+      <div id="player">
+      </div>
+      <div id="ball"></div>
+    </div>
+    <div id="score-board">
+      <span>Gols: <span id="score">0</span></span>
+      <span>Recorde de gols: <span id="high-score">0</span></span>
+    </div>
+    <button id="reset-btn">Reiniciar Jogo</button>
+    <button id="change-btn">Trocar seleção</button>
+    <div id="msg"></div>
+  </div>
+
+  <div id="msg-gol" class="hidden">GOL!</div>
+  <div id="msg-defesa" class="hidden">QUE DEFESA!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
