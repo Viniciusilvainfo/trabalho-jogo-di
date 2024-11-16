@@ -17,8 +17,8 @@ const startBtn = document.getElementById("start-btn");
 const menu = document.getElementById("menu");
 const game = document.getElementById("game");
 
-const defesaSom = new Audio("/narracaoGol.m4a");
-const golacaoSom = new Audio("/gol.mp3");
+const defesaSom = new Audio("narracaoGol.m4a");
+const golacaoSom = new Audio("gol.mp3");
 
 const ball = document.getElementById("ball");
 const goalkeeper = document.getElementById("goalkeeper");
