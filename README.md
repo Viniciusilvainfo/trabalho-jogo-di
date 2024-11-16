@@ -1,6 +1,8 @@
 # trabalho-jogo-di
 trabalho-jogo-di
 
+https://viniciusilvainfo.github.io/trabalho-jogo-di/
+
 Trabalho - JOGOS em JS
 O trabalho consiste em desenvolver um jogo em Java Script.
 Ele deve ser baseado em melhorias dos arquivos disponibilizados no SIGAA. Não usar canvas e
